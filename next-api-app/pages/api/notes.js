@@ -5,6 +5,7 @@ let notes = []; // This will act as our in-memory "database"
 export default function handler(req, res) {
   const { method } = req;
 
+  console.log("handle notes");
   switch (method) {
     case "GET":
       res.status(200).json(notes);
